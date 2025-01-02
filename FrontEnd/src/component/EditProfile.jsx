@@ -120,7 +120,7 @@ const ImageHander=(pics)=>
       </div>
       <div style={{ width: 450 }} className="px-5 pt-4 pt-lg-0">
         <div className="mb-3">
-          <label htmlFor="formGroupExampleInput" className="form-label">
+          <label htmlFor="formGroupExampleInput" className="form-label" style={{ color: '#fff' }}>
             Name
           </label>
           <input
@@ -133,7 +133,7 @@ const ImageHander=(pics)=>
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="formGroupExampleInput2" className="form-label">
+          <label htmlFor="formGroupExampleInput2" className="form-label" style={{ color: '#fff' }}>
             About
           </label>
           <input
@@ -146,7 +146,7 @@ const ImageHander=(pics)=>
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="formGroupExampleInput3" className="form-label">
+          <label htmlFor="formGroupExampleInput3" className="form-label" style={{ color: '#fff' }}>
             Email
           </label>
           <input
@@ -159,7 +159,7 @@ const ImageHander=(pics)=>
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="formGroupExampleInput4" className="form-label">
+          <label htmlFor="formGroupExampleInput4" className="form-label" style={{ color: '#fff' }}>
             Password
           </label>
           <input

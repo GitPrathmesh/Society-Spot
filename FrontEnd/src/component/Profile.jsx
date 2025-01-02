@@ -16,6 +16,7 @@ import "./profile.css";
 import logo from "../images/IMG-20201113-WA0051.jpg"; // with import
 import NavBar from "./NavBar";
 
+
 const Profile = () => {
   const params = useParams();
   console.log(params.id);
@@ -71,6 +72,7 @@ const clickfollow  = ()=> {
    }
   console.log(posts);
   console.log(value);
+  
   return (
 <div>
   <NavBar/>
@@ -97,7 +99,7 @@ const clickfollow  = ()=> {
                     <p class="me-1">{value.user.following.length}</p>
                     <p>following</p>
                 </div>
-            </div>              
+            </div>
               {user1.id===params.id ? (<button onClick={()=>{
                 nav('/user/edit/'+user1.id)
               }} type="button" className="btn btn-dark">
@@ -161,8 +163,8 @@ const clickfollow  = ()=> {
                                 className="me-3 rounded"
                               />
                             </div>
-                            <h6 className=" fw-bold">{pers.name}</h6>
-                            <i className="fa-solid fa-ellipsis ms-auto fs-4" />
+                            <h6 className=" fw-bold" style={{ color: 'white' }}>{pers.name}</h6>
+                            <i className="fa-solid fa-ellipsis ms-auto fs-4" style={{ color: 'white' }} />
                           </div>
                       </>
                     
@@ -195,8 +197,8 @@ const clickfollow  = ()=> {
                                 className="me-3 rounded"
                               />
                             </div>
-                            <h6 className=" fw-bold">{pers.name}</h6>
-                            <i className="fa-solid fa-ellipsis ms-auto fs-4" />
+                            <h6 className=" fw-bold" style={{ color: 'white' }}>{pers.name}</h6>
+                            <i className="fa-solid fa-ellipsis ms-auto fs-4" style={{ color: 'white' }}/>
                           </div>
                       </>
                     

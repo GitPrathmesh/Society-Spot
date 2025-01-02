@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 
-url="";
+url="mongodb://localhost:27017/Social_APP";
 
 
 mongoose.connect(url , (err)=>{

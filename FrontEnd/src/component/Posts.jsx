@@ -136,7 +136,7 @@ const handleKeyDown = (event) => {
       <p onClick={()=>{
            nav('/user/'+props.post.userDetails.id)
       }} className="mb-0 fw-bold fs-5">{props.post.author.name}</p>
-      <p className="text">{new Date(props.post.created).toLocaleString()}</p>
+      <p className="text" style={{color: '#000'}}>{new Date(props.post.created).toLocaleString()}</p>
     </div>
   </div>      
 

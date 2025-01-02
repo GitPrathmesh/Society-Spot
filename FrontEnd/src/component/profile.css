@@ -17,13 +17,13 @@
 }
 
 body{
-    background-color: #EAEBF0;
+    background-color: #020202;
     font-family: 'Lato', sans-serif;
 
 }
 
 nav{
-    background-color: white;
+    background-color:#000000;
 }
 
 .border_radius{
@@ -65,7 +65,7 @@ nav{
 }
 
 .text{
-    color: rgb(119, 118, 118);
+    color: rgb(255, 254, 254);
     font-size: 15px;
 }
 .button_post{
@@ -230,4 +230,6 @@ input{
 }
 
 
-
+.w-50{
+    color: #ffff;
+}

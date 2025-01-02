@@ -104,9 +104,9 @@ useEffect(() => {
   return (
     <div>
     <nav className="py-2 position-fixed top-0 pr-4 start-0 w-100 shadow-sm">
-  <div className="container d-flex justify-content-between align-items-center w-100 bg-white">
+  <div className="container d-flex justify-content-between align-items-center w-100 bg-black">
     <a style={{ textDecoration: "none", color: "black" }}>
-      <h1 onClick={()=>{nav('/')}}  className="logo fs-3 fw-bold">Piqosocial</h1>
+      <h1 onClick={()=>{nav('/')}}  className="logo fs-3 fw-bold">SocietySpot</h1>
     </a>
     <div className="mr-5 position-relative d-flex">
       <Stack sx={{ width: 100}}> 
@@ -171,11 +171,11 @@ useEffect(() => {
       </Stack>
     </div>
     <div className="logo rounded-circle d-flex align-items-center">
-      <i  className="fa-solid fa-right-to-bracket fs-3 me-4" onClick={()=>{
+      <i  className="fa-solid fa-right-to-bracket fs-3 me-4" style={{ color: 'white' }} onClick={()=>{
         localStorage.removeItem("userInfo1")
          nav('/')
         }} />
-      <i className="fa fa-paper-plane me-4 fs-3" onClick={()=>{nav('/chat/join')}} />
+      <i className="fa fa-paper-plane me-4 fs-3"  style={{ color: 'white' }} onClick={()=>{nav('/chat/join')}} />
       <div  onClick={()=>{nav('/user/'+values.id)}}>
         <img
           src={values.image}

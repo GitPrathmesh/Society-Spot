@@ -65,16 +65,19 @@ const clickFollow = (user, index) => {
 
   return (
     <>
-<div className="right col-lg-4 d-lg-block d-sm-none d-none border rounded border-info border_radius d-flex flex-column  p-3 mt-3 white border mt-5 ">
+<div className="right col-lg-4 d-lg-block d-sm-none d-none border rounded border-info border_radius d-flex flex-column  p-3 mt-3 white border mt-5 " style={{ backgroundColor: '#0d0d0d' }}>
   <div>
-                    <p class="fw-bold fs-5">Suggestions for you</p>
+                    <p class="fw-bold fs-5" style={{ color: '#ffffff' }}>Suggestions for you</p>
   </div>
   <hr />
   <div className="max_height overflow-auto">
 
   {values.users.map((user2,idx)=>{
      return (
-      <div className="d-flex align-items-center p-2  mb-3">
+      <div className="d-flex align-items-center p-2  mb-3"  style={{
+        border: '1px solid magenta',
+        borderRadius: '8px',
+      }}>
       <div>
         <img
           src="images/user (3).png"
@@ -85,10 +88,10 @@ const clickFollow = (user, index) => {
       </div>
       <h6 onClick={()=>{
            nav('/user/'+user2._id)
-      }} className=" fw-bold">{user2.name}</h6>
+      }} className=" fw-bold" style={{ color: '#ffffff' }}>{user2.name}</h6>
       <i onClick={()=>{
         clickFollow(user2,idx)
-      }} className="fa-solid fa-user-plus ms-auto fs-4" />
+      }} className="fa-solid fa-user-plus ms-auto fs-4" style={{ color: '#ffffff' }}/>
     </div>
      
      )

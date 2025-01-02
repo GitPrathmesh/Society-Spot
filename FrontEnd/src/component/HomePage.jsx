@@ -70,7 +70,7 @@ updated = updated.filter(function(item) {
 }
 
   return (
-    <div style={{backgroundColor : "#fafafa "}}>
+    <div style={{backgroundColor : "#000"}}>
 {/*---------------------------------------------------------navbar----------------------------------------------------------*/}
     <NavBar/>
 
